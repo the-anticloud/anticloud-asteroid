@@ -1,0 +1,214 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:8550ee6f-533b-5413-8709-6219c001c6d2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-06T07:50:15Z",
+    "component": {
+      "type": "application",
+      "name": "ASTEROID",
+      "version": "c15708a04d3d",
+      "bom-ref": "pkg:generic/anticloud/ASTEROID@c15708a04d3d",
+      "purl": "pkg:generic/anticloud/ASTEROID@c15708a04d3d",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "c15708a04d3d28e9a1cd50553c456299dbc6d236"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/asteroid-team/asteroid"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "anaconda",
+      "version": "unspecified",
+      "purl": "pkg:generic/anaconda",
+      "bom-ref": "conda/anaconda@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "conda-forge",
+      "version": "unspecified",
+      "purl": "pkg:generic/conda-forge",
+      "bom-ref": "conda/conda-forge@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "python",
+      "version": "3.8",
+      "purl": "pkg:generic/python@3.8",
+      "bom-ref": "conda/python@3.8"
+    },
+    {
+      "type": "library",
+      "name": "Cython",
+      "version": "unspecified",
+      "purl": "pkg:generic/Cython",
+      "bom-ref": "conda/Cython@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "pip",
+      "version": "unspecified",
+      "purl": "pkg:generic/pip",
+      "bom-ref": "conda/pip@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "-r",
+      "version": "unspecified",
+      "purl": "pkg:generic/-r",
+      "bom-ref": "conda/-r@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "-e",
+      "version": "unspecified",
+      "purl": "pkg:generic/-e",
+      "bom-ref": "conda/-e@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.16.4",
+      "purl": "pkg:pypi/numpy@1.16.4",
+      "bom-ref": "pypi/numpy@>=1.16.4"
+    },
+    {
+      "type": "library",
+      "name": "scipy",
+      "version": ">=1.10.1",
+      "purl": "pkg:pypi/scipy@1.10.1",
+      "bom-ref": "pypi/scipy@>=1.10.1"
+    },
+    {
+      "type": "library",
+      "name": "torch",
+      "version": ">=2.0.0",
+      "purl": "pkg:pypi/torch@2.0.0",
+      "bom-ref": "pypi/torch@>=2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "asteroid-filterbanks",
+      "version": ">=0.4.0",
+      "purl": "pkg:pypi/asteroid-filterbanks@0.4.0",
+      "bom-ref": "pypi/asteroid-filterbanks@>=0.4.0"
+    },
+    {
+      "type": "library",
+      "name": "SoundFile",
+      "version": ">=0.10.2",
+      "purl": "pkg:pypi/soundfile@0.10.2",
+      "bom-ref": "pypi/SoundFile@>=0.10.2"
+    },
+    {
+      "type": "library",
+      "name": "huggingface_hub",
+      "version": ">=0.0.2",
+      "purl": "pkg:pypi/huggingface-hub@0.0.2",
+      "bom-ref": "pypi/huggingface_hub@>=0.0.2"
+    },
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": ">=5.0",
+      "purl": "pkg:pypi/pyyaml@5.0",
+      "bom-ref": "pypi/PyYAML@>=5.0"
+    },
+    {
+      "type": "library",
+      "name": "pandas",
+      "version": ">=0.23.4",
+      "purl": "pkg:pypi/pandas@0.23.4",
+      "bom-ref": "pypi/pandas@>=0.23.4"
+    },
+    {
+      "type": "library",
+      "name": "pytorch-lightning",
+      "version": ">=2.0.0",
+      "purl": "pkg:pypi/pytorch-lightning@2.0.0",
+      "bom-ref": "pypi/pytorch-lightning@>=2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "torchmetrics",
+      "version": "==1.8.0",
+      "purl": "pkg:pypi/torchmetrics@1.8.0",
+      "bom-ref": "pypi/torchmetrics@==1.8.0"
+    },
+    {
+      "type": "library",
+      "name": "torchaudio",
+      "version": ">=0.5.0",
+      "purl": "pkg:pypi/torchaudio@0.5.0",
+      "bom-ref": "pypi/torchaudio@>=0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "pb_bss_eval",
+      "version": ">=0.0.2",
+      "purl": "pkg:pypi/pb-bss-eval@0.0.2",
+      "bom-ref": "pypi/pb_bss_eval@>=0.0.2"
+    },
+    {
+      "type": "library",
+      "name": "torch_stoi",
+      "version": ">=0.1.2",
+      "purl": "pkg:pypi/torch-stoi@0.1.2",
+      "bom-ref": "pypi/torch_stoi@>=0.1.2"
+    },
+    {
+      "type": "library",
+      "name": "torch_optimizer",
+      "version": ">=0.0.1a12,<=0.3.0",
+      "purl": "pkg:pypi/torch-optimizer@0.0.1a12,<=0.3.0",
+      "bom-ref": "pypi/torch_optimizer@>=0.0.1a12,<=0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "asteroid-upload",
+      "version": "=asteroid.scripts.asteroid_cli:upload",
+      "purl": "pkg:pypi/asteroid-upload@asteroid.scripts.asteroid_cli:upload",
+      "bom-ref": "pypi/asteroid-upload@=asteroid.scripts.asteroid_cli:upload"
+    },
+    {
+      "type": "library",
+      "name": "asteroid-infer",
+      "version": "=asteroid.scripts.asteroid_cli:infer",
+      "purl": "pkg:pypi/asteroid-infer@asteroid.scripts.asteroid_cli:infer",
+      "bom-ref": "pypi/asteroid-infer@=asteroid.scripts.asteroid_cli:infer"
+    },
+    {
+      "type": "library",
+      "name": "asteroid-register-sr",
+      "version": "=asteroid.scripts.asteroid_cli:register_sample_rate",
+      "purl": "pkg:pypi/asteroid-register-sr@asteroid.scripts.asteroid_cli:register_sample_rate",
+      "bom-ref": "pypi/asteroid-register-sr@=asteroid.scripts.asteroid_cli:register_sample_rate"
+    },
+    {
+      "type": "library",
+      "name": "asteroid-versions",
+      "version": "=asteroid.scripts.asteroid_versions:print_versions",
+      "purl": "pkg:pypi/asteroid-versions@asteroid.scripts.asteroid_versions:print_versions",
+      "bom-ref": "pypi/asteroid-versions@=asteroid.scripts.asteroid_versions:print_versions"
+    }
+  ]
+}

@@ -1,0 +1,1112 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "ASTEROID",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\AUDIO_CONSUMER\\ASTEROID\\UPSTREAM_CLONE",
+    "git": {
+      "head": "c15708a04d3d28e9a1cd50553c456299dbc6d236",
+      "url": "https://github.com/asteroid-team/asteroid",
+      "branch": "master",
+      "committed_at": "2026-09-29T09:19:25+01:00"
+    }
+  },
+  "metrics": {
+    "files_total": 399,
+    "source_files_scanned": 267,
+    "lines_of_code": 31753,
+    "languages": {
+      ".py": 193,
+      ".sh": 75,
+      ".md": 47,
+      ".yml": 37,
+      "(none)": 26,
+      ".txt": 11,
+      ".ipynb": 5,
+      ".mat": 2,
+      ".yaml": 1,
+      ".in": 1,
+      ".toml": 1
+    }
+  },
+  "licence": {
+    "spdx": "MIT",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 25,
+    "unique": 25,
+    "by_ecosystem": {
+      "conda": 7,
+      "pypi": 18
+    },
+    "list": [
+      {
+        "ecosystem": "conda",
+        "name": "anaconda",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- anaconda"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "conda-forge",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- conda-forge"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "python",
+        "version": "3.8",
+        "source_file": "environment.yml",
+        "raw": "- python=3.8"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "Cython",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- Cython"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pip",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- pip"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "-r",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- -r"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "-e",
+        "version": "",
+        "source_file": "environment.yml",
+        "raw": "- -e"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "numpy",
+        "version": ">=1.16.4",
+        "source_file": "setup.py",
+        "raw": "numpy>=1.16.4"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "scipy",
+        "version": ">=1.10.1",
+        "source_file": "setup.py",
+        "raw": "scipy>=1.10.1"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torch",
+        "version": ">=2.0.0",
+        "source_file": "setup.py",
+        "raw": "torch>=2.0.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "asteroid-filterbanks",
+        "version": ">=0.4.0",
+        "source_file": "setup.py",
+        "raw": "asteroid-filterbanks>=0.4.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "SoundFile",
+        "version": ">=0.10.2",
+        "source_file": "setup.py",
+        "raw": "SoundFile>=0.10.2"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "huggingface_hub",
+        "version": ">=0.0.2",
+        "source_file": "setup.py",
+        "raw": "huggingface_hub>=0.0.2"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "PyYAML",
+        "version": ">=5.0",
+        "source_file": "setup.py",
+        "raw": "PyYAML>=5.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "pandas",
+        "version": ">=0.23.4",
+        "source_file": "setup.py",
+        "raw": "pandas>=0.23.4"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "pytorch-lightning",
+        "version": ">=2.0.0",
+        "source_file": "setup.py",
+        "raw": "pytorch-lightning>=2.0.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torchmetrics",
+        "version": "==1.8.0",
+        "source_file": "setup.py",
+        "raw": "torchmetrics==1.8.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torchaudio",
+        "version": ">=0.5.0",
+        "source_file": "setup.py",
+        "raw": "torchaudio>=0.5.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "pb_bss_eval",
+        "version": ">=0.0.2",
+        "source_file": "setup.py",
+        "raw": "pb_bss_eval>=0.0.2"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torch_stoi",
+        "version": ">=0.1.2",
+        "source_file": "setup.py",
+        "raw": "torch_stoi>=0.1.2"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torch_optimizer",
+        "version": ">=0.0.1a12,<=0.3.0",
+        "source_file": "setup.py",
+        "raw": "torch_optimizer>=0.0.1a12,<=0.3.0"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "asteroid-upload",
+        "version": "=asteroid.scripts.asteroid_cli:upload",
+        "source_file": "setup.py",
+        "raw": "asteroid-upload=asteroid.scripts.asteroid_cli:upload"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "asteroid-infer",
+        "version": "=asteroid.scripts.asteroid_cli:infer",
+        "source_file": "setup.py",
+        "raw": "asteroid-infer=asteroid.scripts.asteroid_cli:infer"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "asteroid-register-sr",
+        "version": "=asteroid.scripts.asteroid_cli:register_sample_rate",
+        "source_file": "setup.py",
+        "raw": "asteroid-register-sr=asteroid.scripts.asteroid_cli:register_sample_rate"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "asteroid-versions",
+        "version": "=asteroid.scripts.asteroid_versions:print_versions",
+        "source_file": "setup.py",
+        "raw": "asteroid-versions=asteroid.scripts.asteroid_versions:print_versions"
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 61,
+    "files_with_findings": 52,
+    "severity": {
+      "high": 23,
+      "medium": 2,
+      "low": 36
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 22,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/run.sh",
+            "line": 36,
+            "cwe": "CWE-78",
+            "snippet": "root_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/audio_mixer_generator.py",
+            "line": 152,
+            "cwe": "CWE-78",
+            "snippet": "shell=True,"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/download.py",
+            "line": 24,
+            "cwe": "CWE-78",
+            "snippet": "shell=True,"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/extract_audio.py",
+            "line": 34,
+            "cwe": "CWE-78",
+            "snippet": "command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/frames.py",
+            "line": 107,
+            "cwe": "CWE-95",
+            "snippet": "mtcnn = MTCNN(keep_all=True).eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/generate_video_embedding.py",
+            "line": 94,
+            "cwe": "CWE-95",
+            "snippet": "mtcnn = MTCNN(keep_all=True).eval().to(device)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/demask/local/demask_dataset.py",
+            "line": 101,
+            "cwe": "CWE-95",
+            "snippet": "speed = eval(self.configs[\"training\"][\"speed_augm\"])"
+          },
+          {
+            "severity": "high",
+            "file": "egs/dns_challenge_INTERSPEECH2020/baseline/model.py",
+            "line": 185,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/ConvTasNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/DCCRNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/DCUNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/DPRNNTasNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/DPTNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/SuDORMRFImprovedNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/librimix/SuDORMRFNet/local/generate_librimix.sh",
+            "line": 9,
+            "cwe": "CWE-78",
+            "snippet": "current_dir=$(pwd)"
+          },
+          {
+            "severity": "high",
+            "file": "egs/musdb18/X-UMX/eval.py",
+            "line": 21,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/wham/DynamicMixing/model.py",
+            "line": 74,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/whamr/TasNet/model.py",
+            "line": 104,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/wsj0-mix/DeepClustering/model.py",
+            "line": 178,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/eval.py",
+            "line": 73,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/model.py",
+            "line": 489,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/separate.py",
+            "line": 18,
+            "cwe": "CWE-95",
+            "snippet": "model = MultiDecoderDPRNN.from_pretrained(\"JunzheJosephZhu/MultiDecoderDPRNN\").eval()"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 13,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "asteroid/metrics.py",
+            "line": 143,
+            "cwe": "CWE-",
+            "snippet": "# TODO: support WER in metrics_list when merged."
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/separate.py",
+            "line": 107,
+            "cwe": "CWE-",
+            "snippet": "# FIXME: for now this is the best we can do."
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/dsp/beamforming.py",
+            "line": 95,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Implement several RTF estimation strategies, and choose one here, or expose all."
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/masknn/recurrent.py",
+            "line": 690,
+            "cwe": "CWE-",
+            "snippet": "# TODO: We can probably lift the shape requirements once Keras-style \"same\""
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/scripts/asteroid_cli.py",
+            "line": 77,
+            "cwe": "CWE-",
+            "snippet": "token: XXX"
+          },
+          {
+            "severity": "low",
+            "file": "egs/avspeech/looking-to-listen/utils/parse_options.sh",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "# The test [ -z ${foo_bar+xxx} ] will return true if the variable foo_bar"
+          },
+          {
+            "severity": "low",
+            "file": "egs/kinect-wsj/DeepClustering/train.py",
+            "line": 82,
+            "cwe": "CWE-",
+            "snippet": "# TODO:Should ideally be inherited from wsj0-mix"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/ConvTasNet/utils/parse_options.sh",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "# The test [ -z ${foo_bar+xxx} ] will return true if the variable foo_bar"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DPTNet/utils/parse_options.sh",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "# The test [ -z ${foo_bar+xxx} ] will return true if the variable foo_bar"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DynamicMixing/utils/parse_options.sh",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "# The test [ -z ${foo_bar+xxx} ] will return true if the variable foo_bar"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/FilterbankDesign/model.py",
+            "line": 23,
+            "cwe": "CWE-",
+            "snippet": "# FIXME, that's removed"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/model.py",
+            "line": 200,
+            "cwe": "CWE-",
+            "snippet": "# TODO: overlap and add (with division)"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/utils/parse_options.sh",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "# The test [ -z ${foo_bar+xxx} ] will return true if the variable foo_bar"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "asteroid/losses/sinkpit_wrapper.py",
+            "line": 15,
+            "cwe": "CWE-1188",
+            "snippet": "for the validation. (default = True)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/dns_challenge_INTERSPEECH2020/baseline/train.py",
+            "line": 20,
+            "cwe": "CWE-1188",
+            "snippet": "parser.add_argument(\"--is_complex\", default=True, type=str2bool_arg)"
+          }
+        ]
+      },
+      "A06-VulnerableComponents": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "setup.py",
+            "line": 51,
+            "cwe": "CWE-1104",
+            "snippet": "\"torchmetrics==1.8.0\","
+          }
+        ]
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 23,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "asteroid/data/kinect_wsj.py",
+            "line": 112,
+            "cwe": "CWE-319",
+            "snippet": "title_link=\"http://spandh.dcs.shef.ac.uk/chime_challenge/CHiME5/index.html\","
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/data/librimix_dataset.py",
+            "line": 238,
+            "cwe": "CWE-319",
+            "snippet": "title_link=\"http://www.openslr.org/12\","
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/data/wham_dataset.py",
+            "line": 200,
+            "cwe": "CWE-319",
+            "snippet": "title_link=\"http://wham.whisper.ai/\","
+          },
+          {
+            "severity": "low",
+            "file": "asteroid/losses/sinkpit_wrapper.py",
+            "line": 21,
+            "cwe": "CWE-319",
+            "snippet": "See :meth:`~PITLossWrapper.best_softperm_sinkhorn` and http://arxiv.org/abs/2010.11871"
+          },
+          {
+            "severity": "high",
+            "file": "egs/avspeech/looking-to-listen/local/loader/download.py",
+            "line": 14,
+            "cwe": "CWE-494",
+            "snippet": "command = \"youtube-dl {} --no-check-certificate --output {}.mp4 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'\""
+          },
+          {
+            "severity": "low",
+            "file": "egs/avspeech/looking-to-listen/utils/parse_options.sh",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "#  http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "egs/demask/run.sh",
+            "line": 57,
+            "cwe": "CWE-319",
+            "snippet": "wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/train-clean-360.tar.gz -P $storage_dir"
+          },
+          {
+            "severity": "low",
+            "file": "egs/kinect-wsj/DeepClustering/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/TAC/run.sh",
+            "line": 46,
+            "cwe": "CWE-319",
+            "snippet": "wget -c --tries=0 --read-timeout=20 http://www.openslr.org/resources/12/train-clean-100.tar.gz -P $storage_dir"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/ConvTasNet/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/ConvTasNet/utils/parse_options.sh",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "#  http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DPRNN/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DPTNet/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DPTNet/utils/parse_options.sh",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "#  http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DynamicMixing/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/DynamicMixing/utils/parse_options.sh",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "#  http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/MixIT/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wham/TwoStep/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/whamr/TasNet/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix/DeepClustering/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/separate.py",
+            "line": 28,
+            "cwe": "CWE-319",
+            "snippet": "Please support our work by citing our paper: http://www.isle.illinois.edu/speech_web_lg/pubs/2021/zhu2021multi.pdf\""
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/local/convert_sphere2wav.sh",
+            "line": 13,
+            "cwe": "CWE-319",
+            "snippet": "wget http://www.openslr.org/resources/3/sph2pipe_v2.5.tar.gz -P ../../tools"
+          },
+          {
+            "severity": "low",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/utils/parse_options.sh",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "#  http://www.apache.org/licenses/LICENSE-2.0"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 20,
+    "files_with_findings": 20,
+    "severity": {
+      "high": 0,
+      "medium": 20,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 20,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "hubconf.py",
+            "line": 30,
+            "cwe": "CWE-494",
+            "snippet": "return models.DeMask.from_pretrained(name_url_or_file, **kwargs)"
+          },
+          {
+            "severity": "medium",
+            "file": "asteroid/models/base_models.py",
+            "line": 92,
+            "cwe": "CWE-494",
+            "snippet": "def from_pretrained(cls, pretrained_model_conf_or_path, *args, **kwargs):"
+          },
+          {
+            "severity": "medium",
+            "file": "asteroid/scripts/asteroid_cli.py",
+            "line": 159,
+            "cwe": "CWE-494",
+            "snippet": "model = BaseModel.from_pretrained(pretrained_model_conf_or_path=args.url_or_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "asteroid/utils/hub_utils.py",
+            "line": 69,
+            "cwe": "CWE-494",
+            "snippet": "return huggingface_hub.hf_hub_download("
+          },
+          {
+            "severity": "medium",
+            "file": "egs/dampvsep/ConvTasNet/eval.py",
+            "line": 41,
+            "cwe": "CWE-494",
+            "snippet": "model = ConvTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/ConvTasNet/eval.py",
+            "line": 79,
+            "cwe": "CWE-494",
+            "snippet": "model = ConvTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/DCCRNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = DCCRNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/DCUNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = DCUNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/DPRNNTasNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = DPRNNTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/DPTNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = DPTNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/SuDORMRFImprovedNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = SuDORMRFImprovedNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/librimix/SuDORMRFNet/eval.py",
+            "line": 77,
+            "cwe": "CWE-494",
+            "snippet": "model = SuDORMRFNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/LibriVAD/eval.py",
+            "line": 44,
+            "cwe": "CWE-494",
+            "snippet": "model = VADNet.from_pretrained(os.path.join(conf[\"exp_dir\"], \"best_model.pth\"))"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/musdb18/X-UMX/eval.py",
+            "line": 20,
+            "cwe": "CWE-494",
+            "snippet": "model = XUMX.from_pretrained(model_name)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/TAC/eval.py",
+            "line": 35,
+            "cwe": "CWE-494",
+            "snippet": "model = FasNetTAC.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/wham/ConvTasNet/eval.py",
+            "line": 44,
+            "cwe": "CWE-494",
+            "snippet": "model = ConvTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/wham/DPRNN/eval.py",
+            "line": 43,
+            "cwe": "CWE-494",
+            "snippet": "model = DPRNNTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/wham/DPTNet/eval.py",
+            "line": 43,
+            "cwe": "CWE-494",
+            "snippet": "model = DPTNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/wham/MixIT/eval.py",
+            "line": 44,
+            "cwe": "CWE-494",
+            "snippet": "model = DPRNNTasNet.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "egs/wsj0-mix-var/Multi-Decoder-DPRNN/separate.py",
+            "line": 18,
+            "cwe": "CWE-494",
+            "snippet": "model = MultiDecoderDPRNN.from_pretrained(\"JunzheJosephZhu/MultiDecoderDPRNN\").eval()"
+          }
+        ]
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:8550ee6f-533b-5413-8709-6219c001c6d2",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T14:56:52Z",
+      "component": {
+        "type": "application",
+        "name": "ASTEROID",
+        "version": "c15708a04d3d",
+        "bom-ref": "pkg:generic/anticloud/ASTEROID@c15708a04d3d",
+        "purl": "pkg:generic/anticloud/ASTEROID@c15708a04d3d",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "c15708a04d3d28e9a1cd50553c456299dbc6d236"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/asteroid-team/asteroid"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "anaconda",
+        "version": "unspecified",
+        "purl": "pkg:generic/anaconda",
+        "bom-ref": "conda/anaconda@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "conda-forge",
+        "version": "unspecified",
+        "purl": "pkg:generic/conda-forge",
+        "bom-ref": "conda/conda-forge@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "python",
+        "version": "3.8",
+        "purl": "pkg:generic/python@3.8",
+        "bom-ref": "conda/python@3.8"
+      },
+      {
+        "type": "library",
+        "name": "Cython",
+        "version": "unspecified",
+        "purl": "pkg:generic/Cython",
+        "bom-ref": "conda/Cython@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pip",
+        "version": "unspecified",
+        "purl": "pkg:generic/pip",
+        "bom-ref": "conda/pip@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "-r",
+        "version": "unspecified",
+        "purl": "pkg:generic/-r",
+        "bom-ref": "conda/-r@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "-e",
+        "version": "unspecified",
+        "purl": "pkg:generic/-e",
+        "bom-ref": "conda/-e@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "numpy",
+        "version": ">=1.16.4",
+        "purl": "pkg:pypi/numpy@1.16.4",
+        "bom-ref": "pypi/numpy@>=1.16.4"
+      },
+      {
+        "type": "library",
+        "name": "scipy",
+        "version": ">=1.10.1",
+        "purl": "pkg:pypi/scipy@1.10.1",
+        "bom-ref": "pypi/scipy@>=1.10.1"
+      },
+      {
+        "type": "library",
+        "name": "torch",
+        "version": ">=2.0.0",
+        "purl": "pkg:pypi/torch@2.0.0",
+        "bom-ref": "pypi/torch@>=2.0.0"
+      },
+      {
+        "type": "library",
+        "name": "asteroid-filterbanks",
+        "version": ">=0.4.0",
+        "purl": "pkg:pypi/asteroid-filterbanks@0.4.0",
+        "bom-ref": "pypi/asteroid-filterbanks@>=0.4.0"
+      },
+      {
+        "type": "library",
+        "name": "SoundFile",
+        "version": ">=0.10.2",
+        "purl": "pkg:pypi/soundfile@0.10.2",
+        "bom-ref": "pypi/SoundFile@>=0.10.2"
+      },
+      {
+        "type": "library",
+        "name": "huggingface_hub",
+        "version": ">=0.0.2",
+        "purl": "pkg:pypi/huggingface-hub@0.0.2",
+        "bom-ref": "pypi/huggingface_hub@>=0.0.2"
+      },
+      {
+        "type": "library",
+        "name": "PyYAML",
+        "version": ">=5.0",
+        "purl": "pkg:pypi/pyyaml@5.0",
+        "bom-ref": "pypi/PyYAML@>=5.0"
+      },
+      {
+        "type": "library",
+        "name": "pandas",
+        "version": ">=0.23.4",
+        "purl": "pkg:pypi/pandas@0.23.4",
+        "bom-ref": "pypi/pandas@>=0.23.4"
+      },
+      {
+        "type": "library",
+        "name": "pytorch-lightning",
+        "version": ">=2.0.0",
+        "purl": "pkg:pypi/pytorch-lightning@2.0.0",
+        "bom-ref": "pypi/pytorch-lightning@>=2.0.0"
+      },
+      {
+        "type": "library",
+        "name": "torchmetrics",
+        "version": "==1.8.0",
+        "purl": "pkg:pypi/torchmetrics@1.8.0",
+        "bom-ref": "pypi/torchmetrics@==1.8.0"
+      },
+      {
+        "type": "library",
+        "name": "torchaudio",
+        "version": ">=0.5.0",
+        "purl": "pkg:pypi/torchaudio@0.5.0",
+        "bom-ref": "pypi/torchaudio@>=0.5.0"
+      },
+      {
+        "type": "library",
+        "name": "pb_bss_eval",
+        "version": ">=0.0.2",
+        "purl": "pkg:pypi/pb-bss-eval@0.0.2",
+        "bom-ref": "pypi/pb_bss_eval@>=0.0.2"
+      },
+      {
+        "type": "library",
+        "name": "torch_stoi",
+        "version": ">=0.1.2",
+        "purl": "pkg:pypi/torch-stoi@0.1.2",
+        "bom-ref": "pypi/torch_stoi@>=0.1.2"
+      },
+      {
+        "type": "library",
+        "name": "torch_optimizer",
+        "version": ">=0.0.1a12,<=0.3.0",
+        "purl": "pkg:pypi/torch-optimizer@0.0.1a12,<=0.3.0",
+        "bom-ref": "pypi/torch_optimizer@>=0.0.1a12,<=0.3.0"
+      },
+      {
+        "type": "library",
+        "name": "asteroid-upload",
+        "version": "=asteroid.scripts.asteroid_cli:upload",
+        "purl": "pkg:pypi/asteroid-upload@asteroid.scripts.asteroid_cli:upload",
+        "bom-ref": "pypi/asteroid-upload@=asteroid.scripts.asteroid_cli:upload"
+      },
+      {
+        "type": "library",
+        "name": "asteroid-infer",
+        "version": "=asteroid.scripts.asteroid_cli:infer",
+        "purl": "pkg:pypi/asteroid-infer@asteroid.scripts.asteroid_cli:infer",
+        "bom-ref": "pypi/asteroid-infer@=asteroid.scripts.asteroid_cli:infer"
+      },
+      {
+        "type": "library",
+        "name": "asteroid-register-sr",
+        "version": "=asteroid.scripts.asteroid_cli:register_sample_rate",
+        "purl": "pkg:pypi/asteroid-register-sr@asteroid.scripts.asteroid_cli:register_sample_rate",
+        "bom-ref": "pypi/asteroid-register-sr@=asteroid.scripts.asteroid_cli:register_sample_rate"
+      },
+      {
+        "type": "library",
+        "name": "asteroid-versions",
+        "version": "=asteroid.scripts.asteroid_versions:print_versions",
+        "purl": "pkg:pypi/asteroid-versions@asteroid.scripts.asteroid_versions:print_versions",
+        "bom-ref": "pypi/asteroid-versions@=asteroid.scripts.asteroid_versions:print_versions"
+      }
+    ]
+  },
+  "elapsed_seconds": 186.5
+}
